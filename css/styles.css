@@ -387,6 +387,7 @@ a {
   border-color: var(--webstudio-color);
 }
 
+
 /* Footer Section */
 
 .footer {
@@ -396,7 +397,7 @@ a {
 .footer-text {
   align-items: baseline;
   display: flex;
-  gap: 94px;
+  gap: 93px;
   margin: 0 auto;
   max-width: 1170px;
   padding: 60px 0 60px 0;
@@ -415,7 +416,7 @@ a {
 
 .logo-footer {
   color: #fff;
-  font-family: Raleway;
+  font-family: var(--webstudio-font-family);
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -440,7 +441,7 @@ a {
   letter-spacing: 0.03em;
   line-height: 1.14;
   padding-bottom: 12px;
-}
+  }
 
 .contacts-footer {
   margin: 0;
@@ -473,13 +474,13 @@ a {
 .footer-icons-list {
   display: flex;
   padding: 0;
+  gap: 10px;
 }
 
 .icon-footer {
   align-items: center;
   display: inline-block;
   justify-content: center;
-  margin-right: 10px;
 }
 
 .icon-footer {
@@ -496,6 +497,66 @@ a {
 .icon-footer:focus {
   background-color: var(--webstudio-color);
 }
+
+.subscribe-label {
+  color: #fff;
+  font-family: var(--webstudio-font-family);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.subscribe-input {
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 358px;
+}
+
+.subscribe-input:hover,
+.subscribe-input:focus {
+  border-color: var(--webstudio-color);
+}
+
+.subscribe-btn {
+  background-color: var(--webstudio-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  font-family: var(--webstudio-font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  height: 50px;
+  letter-spacing: 0.96px;
+  line-height: 30px;
+  padding: 0 0 0 43px;
+  position: relative;
+  text-align: left;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 200px;
+
+}
+
+.subscribe-btn svg {
+  position: absolute;
+  right: 28px;
+  top: 13px;
+}
+
+.subscribe-btn:active {
+  background-color: #188ce8;
+}
+
 
 /* Portfolio Page*/
 
@@ -523,7 +584,8 @@ a {
   cursor: pointer;
   border-radius: 4px;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+              0px 1px 2px 0px rgba(0, 0, 0, 0.08), 
+              0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .filter-button-set {
@@ -606,7 +668,8 @@ a {
 .portfolio-card:hover,
 .portfolio-card:focus {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+              0px 4px 4px 0px rgba(0, 0, 0, 0.06), 
+              0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 /* Modal window Section */
@@ -734,8 +797,9 @@ a {
   width: 200px;
 }
 
+.send_button:hover,
 .send_button:focus,
-.send_button:hover {
+.send_button:active {
   background-color: #188ce8;
 }
 
