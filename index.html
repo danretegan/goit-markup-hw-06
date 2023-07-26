@@ -601,7 +601,59 @@
           <svg height="30px" width="30px" class="icon-close" data-modal-close>
             <use href="./images/icons.svg#icon-close"></use>
           </svg>          
-          Continutul modalului
+            
+          <form
+      class="request_our_service_form"
+      name="request_our_service_form"
+      autocomplete="on"
+      novalidate
+    >
+      <p class="leave_your_information">
+        Leave your information and we'll call you back
+      </p>
+      <label class="label person-label">
+        Name
+        <input class="input input-person" type="text" name="name" />
+        <svg height="18px" width="18px" class="person-icon">
+          <use href="./images/icons.svg#icon-person"> 
+          </use>
+        </svg>
+
+      </label>
+
+      <label class="label phone-label">
+        Telephone
+        <input class="input input-phone" type="tel" name="phone_number" />
+        <svg height="18px" width="18px" class="phone-icon">
+          <use href="./images/icons.svg#icon-phone"> 
+          </use>
+      </label>
+
+      <label class="label email-label">
+        E-mail
+        <input class="input input-email" type="email" name="email" />
+        <svg height="18px" width="18px" class="envelope-icon">
+          <use href="./images/icons.svg#icon-email"> 
+          </use>
+      </label>
+
+      <label class="label">
+        Comments
+        <textarea class="textarea"
+          name="comments"
+          rows="5"
+          placeholder="Enter the text"
+        ></textarea>
+      </label>
+
+      <label class="term">
+        <input type="checkbox" name="terms" value="I agree with the letter and accept the Terms and Conditions" />
+        I agree with the letter and accept the <a href="terms.html">Terms and Conditions</a>
+      </label>
+
+      <button class="send_button" type="submit">Send</button>
+    </form>
+      
         </div>
       </div>
     </main>
