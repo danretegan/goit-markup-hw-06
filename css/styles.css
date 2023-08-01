@@ -756,8 +756,8 @@ a {
   outline: none;
 }
 
-.input-area:hover,
-.input-area:focus {
+.input-box:focus + .input-icon,
+.input-box:hover + .input-icon {
   fill: var(--webstudio-color);
 }
 
@@ -865,5 +865,4 @@ a {
 .send-button:hover,
 .send-button:focus {
   background-color: #188ce8;
-  /* outline: none; */
 }
